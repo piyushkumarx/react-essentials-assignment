@@ -1,0 +1,35 @@
+h3{
+    font-size: 17px;
+    color: #8C909B;
+    margin-bottom: 15px;
+
+
+}
+
+.skill{
+    
+    display: inline-block;
+    padding: 8px 10px;
+    color: #323A4B;
+    font-weight: 700;
+    background-color: #E6EEF8;
+    border-radius: 15px;
+   margin-right: 10px ; 
+   margin-bottom: 8px;
+}
+
+.dark-theme .skill {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.dark-theme h3 {
+  color: #b5b5b5;
+}
+
+
+.skills-Box{
+    
+    width: 30rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,63 @@
+
+.info-box{
+    width: 30rem;
+}
+
+
+
+h1{
+    color: #11192C;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 1.1rem;
+    color: #8E939D;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #303747;
+}
+
+.profile-Top{
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.profile-Name{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.profile-Bio{
+    margin: 1.6rem 0rem;
+}
+
+img{
+    width: 5.8rem;
+    border-radius: 50%;
+    height: 5.8rem;
+    margin-right: 1.5rem;
+    object-fit: cover
+    
+}
+
+
+
+.dark-theme h1{
+    color: #FFFFFF;
+}
+
+.dark-theme p{
+    color: rgba(255, 255, 255, 0.82);
+}

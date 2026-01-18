@@ -1,0 +1,87 @@
+
+.footer-Line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+ 
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+/* contact */
+
+.contact-Box{
+    background-color: #2563EB;
+    padding: 0.7rem 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+.contact-Text{
+    color: #D3DFFB;
+     font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -1px;
+  font-size: 1.2rem;
+  margin-left: 0.7rem;
+
+}
+
+
+.cursor{
+  cursor: pointer;
+}
+
+/* LIke */
+
+.like-Box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+
+}
+
+.like-Count{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 7px;
+}
+
+/* DARK */
+
+.dark-Mode{
+  display: flex;
+  align-items: center;
+}
+
+.dark-Text{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+
+/* left -Right */
+
+.left-Right{
+  width: 5rem;
+  justify-content: space-between;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+
+.open-Page{
+  color: #858B96;
+  font-weight: 600;
+}
+

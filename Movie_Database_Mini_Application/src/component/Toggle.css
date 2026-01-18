@@ -1,0 +1,35 @@
+.toggle-Box{
+    cursor: pointer;
+    width: max-content;
+     display: flex;
+     margin-left: auto; 
+     align-items: center;
+     justify-content: center; 
+      padding: 8px 10px;
+      color: #323A4B;
+    font-weight: 700;
+    background-color: #E6EEF8;
+    border-radius: 20px;
+      margin-bottom: 12px;;
+}
+
+
+.lni{
+    font-size: 25px;
+}
+
+.toggle-Text{
+    margin-left: 8px;
+}
+
+.toggle-Icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dark-theme .toggle-Box{
+    background-color: #2a2a2a;
+    color: #E6EEF8;
+}

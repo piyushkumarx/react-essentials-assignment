@@ -1,0 +1,118 @@
+.movie-card {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: auto;
+    border-radius: 12px;
+    background-color: #e6eef8;
+}
+
+.movie-basic-info {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.basic-info {
+    font-weight: 500;
+    color: #616875;
+    font-size: 0.9rem;
+}
+
+.movie-name {
+    color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.4px;
+}
+
+
+.lni {
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+  list-style: none;
+}
+
+
+li{
+    font-weight: 600;
+    color: #616875;
+    font-size: 0.9rem;
+}
+
+.fav {
+
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 7px;
+    /* border: 1px solid black; */
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+
+
+
+}
+
+
+.left-postion {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.rating{
+    /* border: 1px solid black; */
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+.imdb-rating{
+    background-color: #f59e0b;
+}
+
+.imdb-rating span{
+    font-weight: 600;
+}
+
+.fa-star{
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.264);
+}
+
+.imdb-rating, .genre{
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    padding: 2px 7px;
+}
+
+.genre{
+   
+    font-weight: 600;
+    font-size: 0.90rem;
+    color: #63666c;
+    background-color: #f8f9fa;
+    letter-spacing: -0.3px;
+}
+
+
+
+.fav span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
