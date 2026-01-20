@@ -39,13 +39,17 @@ function PortfolioCard() {
   function movepageForward() {
     if (page < 4) {
       setPage(page + 1);
-    } else alert("faild to move forward");
+    }else{
+      setPage(1)
+    }
   }
 
   function movepageBackward() {
     if (page > 1) {
-      setPage(page - 1);
-    } else alert("faild to move backward");
+      setPage(page-1);
+    }else{
+      setPage(4)
+    }
   }
 
   function handletheme() {
@@ -64,23 +68,25 @@ function PortfolioCard() {
 
   return (
     <div className={isdark ? "dark-theme" : "light-theme"}>
-      <Toggle changetheme={handletheme} isDark={isdark} />
+      <div className="profile-card-container">
+        <Toggle changetheme={handletheme} isDark={isdark} />
 
-      <div className="card">
-        <ProfileInfo ProfileImg={imgArr[page - 1]} />
-        <Skills skills={skillsArr} />
-        <Footer
-          likes={likes}
-          clickLike={handlelike}
-          isliked={isliked}
-          isDark={isdark}
-          mode={isdark ? "Light" : "Dark"}
-          totalPages={4}
-          currentPage={page}
-          backword={movepageBackward}
-          forward={movepageForward}
-          changetheme={handletheme}
-        />
+        <div className="card">
+          <ProfileInfo ProfileImg={imgArr[page - 1]} />
+          <Skills skills={skillsArr} />
+          <Footer
+            likes={likes}
+            clickLike={handlelike}
+            isliked={isliked}
+            isDark={isdark}
+            mode={isdark ? "Light" : "Dark"}
+            totalPages={4}
+            currentPage={page}
+            backword={movepageBackward}
+            forward={movepageForward}
+            changetheme={handletheme}
+          />
+        </div>
       </div>
     </div>
   );

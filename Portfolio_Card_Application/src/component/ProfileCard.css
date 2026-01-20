@@ -1,8 +1,16 @@
+.profile-card-container{
+  max-width: 37rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .card{
     
     padding: 2rem 2rem 1.5rem 2rem;
     border-radius: 17px;
     box-shadow: 1px 1px 30px  rgba(0, 0, 0, 0.194);
+    width: 100%;
+    box-sizing: border-box;
 
 }
 

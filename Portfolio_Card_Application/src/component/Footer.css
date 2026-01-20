@@ -1,31 +1,33 @@
-
-.footer-Line {
+.footer-Line{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30rem;
- 
-   font-family: "Inter", sans-serif;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  
+
 }
 
 /* contact */
 
 .contact-Box{
-    background-color: #2563EB;
-    padding: 0.7rem 1.2rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    
-    
+  background-color: #2563EB;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+
 
 }
+
 .contact-Text{
-    color: #D3DFFB;
-     font-family: "Inter", sans-serif;
+  color: #D3DFFB;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -42,7 +44,7 @@
 
 /* LIke */
 
-.like-Box{
+.like-Box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +78,7 @@
   width: 5rem;
   justify-content: space-between;
   display: flex;
-  /* border: 1px solid black; */
+  
 }
 
 
@@ -84,4 +86,3 @@
   color: #858B96;
   font-weight: 600;
 }
-
