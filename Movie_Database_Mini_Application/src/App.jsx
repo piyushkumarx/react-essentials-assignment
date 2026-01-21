@@ -687,33 +687,42 @@ function App() {
             {filteredMovies.length === 0 ? (
               <p className="no-movie">No movies found</p>
             ) : (
-              filteredMovies
-                .slice(0, 3)
-                .map((movie) => (
-                  <Moviecard
-                    key={movie.id}
-                    movie={movie}
-                    handlefav={favMovie}
-                    isfav={favmovies.some((m) => m.id === movie.id)}
-                    title={movie.title}
-                    year={movie.year}
-                    genre={movie.genre}
-                    rating={movie.rating}
-                    maintag={movie.maintag}
-                    tags={movie.tags}
-                  />
-                ))
+              filteredMovies.map((movie) => (
+                <Moviecard
+                  key={movie.id}
+                  movie={movie}
+                  handlefav={favMovie}
+                  isfav={favmovies.some((m) => m.id === movie.id)}
+                  title={movie.title}
+                  year={movie.year}
+                  genre={movie.genre}
+                  rating={movie.rating}
+                  maintag={movie.maintag}
+                  tags={movie.tags}
+                />
+              ))
             )}
           </div>
 
           <div className="fav-movies">
             <h4>Favorite Movies</h4>
-
             {favmovies.length > 0 ? (
-              <div className="fav-movie-list">
+              <div
+                className="fav-movie-list"
+                style={{
+                  display: "flex",
+                  overflowX: "auto",
+                  gap: "10px",
+                  paddingBottom: "10px",
+                }}
+              >
                 {favmovies.map((movie) => (
                   <div className="fav-movie-card" key={movie.id}>
-                    <i class="lni lni-heart" style={{ color: "#74767b" }}></i>
+                    <i
+                      className="fa-solid fa-heart"
+                      style={{ color: "#ff0000", cursor: "pointer" }}
+                      onClick={() => favMovie(movie)}
+                    ></i>
                     <h6>
                       {movie.title} ({movie.year})
                     </h6>
